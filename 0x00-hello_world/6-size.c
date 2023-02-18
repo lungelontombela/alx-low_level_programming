@@ -12,7 +12,6 @@ int main(void)
 	double doubleType;
 	char charType;
 
-	// sizeof evaluates the size of a variable
 	printf("sizeof of int: %zu bytes\n", sizeof(intType));
 	printf("sizeof of float: %zu bytes\n", sizeof(floatType));
 	printf("sizeof of double: %zu bytes\n", sizeof(doubleType));
