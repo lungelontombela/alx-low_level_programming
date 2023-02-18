@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Discription: Get a random number and check its last digit, and compare it with 5
+ * betty style docs function goes to main
  * Return: 0
  */
 int main(void)
