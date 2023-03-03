@@ -1,13 +1,5 @@
 #include "main.h"
 
-/**
- * infinite_add - add two number
- * @n1: input value
- * @n2: input value
- * @size_r: input value
- * @r: input value
- * Return: 0
- */
 
 char *infinite_add(char *n1, char *n2, s char *r, int size_r)
 {
