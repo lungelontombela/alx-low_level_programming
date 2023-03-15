@@ -1,11 +1,13 @@
-#include “main.h”
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
-*  _atoi - converts a string to an integer
-* @s: string to be converted
-*
-* Return: the int converted from the the string
-*/
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the the string
+ */
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
@@ -18,7 +20,7 @@ int _atoi(char *s)
 	digit = 0;
 
 	while (s[len] != '\0')
-len++;
+		len++;
 
 	while (i < len && f == 0)
 	{
@@ -29,29 +31,28 @@ len++;
 		{
 			digit = s[i] - '0',
 		        if (d % 2)
-	                digit = -digit;
+		        digit = -digit;
 			n = n * 10 + digit;
 			f = 1;
-			if (s[i + 1] < ‘0’ || s[i + 1] > ‘9’)
-				break;
-			f = 0;
+			 if (s[i + 1] < ‘0’ || s[i + 1] > ‘9’)
+				 break;
+			 f = 0;
 		}
 		i++;
 	}
 	if (f == 0)
-		return (0);
-	return (n);
+	return (0);
+	 return (n);
 }
-
 /**
-* main - multiplies two numbers
-* @argc: number of arguments
-* @argv: array of arguments
-*
-* Return: 0 (Success), 1 (Error)
-*/
-Int main(int argc, char *argv[])
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: 0 (Success), 1 (Error)
+ */
 
+Int main(int argc, char *argv[])
 {
 	int result, num1, num2;
 
@@ -65,7 +66,7 @@ Int main(int argc, char *argv[])
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
-	printf("%d\n”, result);
+	printf("%d\n", result);
 
-return (0);
+	return (0);
 }
