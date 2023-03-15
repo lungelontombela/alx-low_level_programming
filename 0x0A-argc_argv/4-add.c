@@ -19,12 +19,16 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '0\'; j++)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				printf("%s\n", "Error");
+
+				return (1);
+			}
 		}
 	}
 
-	for (k = 0; k < argc; k++)
+	for (k = 1; k < argc; k++)
 	{
 		num = atoi(argv[k]);
 		result += num;
